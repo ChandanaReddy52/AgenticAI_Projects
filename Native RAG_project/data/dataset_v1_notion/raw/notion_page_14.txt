@@ -1,0 +1,44 @@
+Notion IP addresses & domains
+
+In this Article
+Contact your security team to allowlist these Notion IP addresses or domains 🌐
+Contents
+Notion IP addresses and domains
+Notion provides a fixed range of outgoing IP addresses, as well as domains that you can allowlist, helping you increase the security of your network.
+
+These cannot be managed in your Notion account, so please contact your security team to allowlist these IP addresses or domains.
+
+Notion IP addresses and domains
+Notion is hosted in US-West-2 (Oregon) and EU-Central-1 (Frankfurt).
+
+Notion owned IP address blocks:
+
+131.149.232.0/21
+
+208.103.161.0/24
+
+2602:F79A::/36
+
+
+
+Notion owned domains:
+
+notion.com
+
+notion.site
+
+notion.so
+
+api.notion.com
+
+img.notionusercontent.com
+
+notionusercontent.com
+
+secure.notion-static.com
+
+audioprocessor.www.notion.so
+
+
+Notion is hosted on CloudFlare, so we recommend allowlisting Cloudflare IP addresses.
+

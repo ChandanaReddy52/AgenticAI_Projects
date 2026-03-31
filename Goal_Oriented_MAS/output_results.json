@@ -1,0 +1,98 @@
+[
+  {
+    "query": "The amount got deducted but the payment failed.",
+    "expected_primary": "transaction",
+    "llm_primary": "transaction",
+    "system_primary": "transaction",
+    "risk": "medium",
+    "ambiguity": false,
+    "resolution_mode": "GUIDED_RESPONSE",
+    "selected_response_type": "guided_response",
+    "final_response": "To ensure your transaction can be processed smoothly, please ensure all necessary verification steps have been completed on your end. If you need assistance with any verification requirements or have questions about our security procedures, please let us know.",
+    "system_override": null
+  },
+  {
+    "query": "I see a transaction I did not make.",
+    "expected_primary": "fraud",
+    "llm_primary": "fraud",
+    "system_primary": "fraud",
+    "risk": "high",
+    "ambiguity": false,
+    "resolution_mode": "ESCALATE_TO_HUMAN",
+    "selected_response_type": "escalation_response",
+    "final_response": "Your case has been escalated due to a high-risk fraud detection. Our compliance and security teams are actively investigating and have placed necessary blocks to protect your account. We will follow all regulatory protocols to resolve this issue securely and will keep you informed within the appropriate guidelines.",
+    "system_override": null
+  },
+  {
+    "query": "Someone used my card without my permission.",
+    "expected_primary": "fraud",
+    "llm_primary": "fraud",
+    "system_primary": "fraud",
+    "risk": "high",
+    "ambiguity": false,
+    "resolution_mode": "ESCALATE_TO_HUMAN",
+    "selected_response_type": "escalation_response",
+    "final_response": "Due to the high-risk nature of the fraud detected, your case has been escalated to our compliance and security teams. We have blocked relevant transactions to safeguard your account and are conducting a thorough investigation in accordance with all applicable regulations.",
+    "system_override": null
+  },
+  {
+    "query": "My card is lost, please block it.",
+    "expected_primary": "card",
+    "llm_primary": "card",
+    "system_primary": "card",
+    "risk": "high",
+    "ambiguity": false,
+    "resolution_mode": "ESCALATE_TO_HUMAN",
+    "selected_response_type": "escalation_response",
+    "final_response": "Due to the high-risk nature of the issue involving your card, your case has been escalated to our specialized investigation team. The card remains blocked to prevent unauthorized transactions while a detailed review is conducted in compliance with security policies and regulations.",
+    "system_override": null
+  },
+  {
+    "query": "I want to know my loan EMI schedule.",
+    "expected_primary": "loan",
+    "llm_primary": "loan",
+    "system_primary": "loan",
+    "risk": "low",
+    "ambiguity": false,
+    "resolution_mode": "GUIDED_RESPONSE",
+    "selected_response_type": "guided_response",
+    "final_response": "To assist you with your loan application, please ensure you have completed all required steps. If you have any questions about the process or need guidance, feel free to ask and we will help you through the necessary procedures.",
+    "system_override": null
+  },
+  {
+    "query": "I cannot log into my account.",
+    "expected_primary": "account_access",
+    "llm_primary": "account_access",
+    "system_primary": "account_access",
+    "risk": "medium",
+    "ambiguity": false,
+    "resolution_mode": "GUIDED_RESPONSE",
+    "selected_response_type": "guided_response",
+    "final_response": "To help you regain access to your account, please follow the required verification steps when prompted. This helps us maintain account security and protect your information.",
+    "system_override": null
+  },
+  {
+    "query": "Payment is pending since yesterday.",
+    "expected_primary": "transaction",
+    "llm_primary": "transaction",
+    "system_primary": "transaction",
+    "risk": "medium",
+    "ambiguity": false,
+    "resolution_mode": "GUIDED_RESPONSE",
+    "selected_response_type": "guided_response",
+    "final_response": "To ensure your transaction is processed smoothly, please make sure all necessary verification steps have been completed. If you need assistance or have any questions about these requirements, please let us know.",
+    "system_override": null
+  },
+  {
+    "query": "Why is my balance not updated?",
+    "expected_primary": "transaction",
+    "llm_primary": "transaction",
+    "system_primary": "transaction",
+    "risk": "medium",
+    "ambiguity": false,
+    "resolution_mode": "GUIDED_RESPONSE",
+    "selected_response_type": "guided_response",
+    "final_response": "To proceed with your transaction, please complete the necessary verification steps. If you need assistance or further information on the process, feel free to ask, and we will guide you as needed.",
+    "system_override": null
+  }
+]

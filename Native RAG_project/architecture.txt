@@ -1,0 +1,20 @@
+We separate into three layers:
+
+1. Infrastructure layer (unchanged)
+
+FAISS
+embeddings
+memory storage
+
+2. Capability layer (tools) ✅
+
+retriever tool
+answer generator tool
+
+3.Pipeline / orchestration layer
+
+calls tools
+assembles flow
+still not agentic yet
+
+This mirrors real production systems.

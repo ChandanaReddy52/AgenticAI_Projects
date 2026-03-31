@@ -1,0 +1,219 @@
+HIPAA configuration
+
+In this Article
+Learn about how to make your Notion workspace HIPAA compliant, and how to enable HIPAA compliance 🏥
+
+Contents
+Configuring Notion for HIPAA
+Enable HIPAA compliance
+Deactivate HIPAA compliance
+
+The Health Insurance Portability and Accountability Act (HIPAA) is a US federal law that was enacted in 1996 that requires the protection and confidential handling of protected health information (PHI) by covered entities such as healthcare providers, health plans, and healthcare clearinghouses, as well as their business associates.
+
+This article provides users required product configurations to make their Notion workspace HIPAA compliant.
+
+
+Note: Notion's Business Associate Agreement (BAA) governs the protection of Personal Health Information (PHI) that is stored in the Notion Service. To be eligible to sign Notion’s BAA, you must subscribe to our Enterprise Plan.
+
+Any Beta Services are not covered by the BAA and therefore may not be used or deployed in a manner that processes protected health information.
+
+To the extent that any language on this page and language found in the BAA conflict at any time, the BAA shall control.
+
+Configuring Notion for HIPAA
+HIPAA Technical Safeguard Requirements: Access Control
+
+Implement technical policies and procedures for electronic information systems that maintain electronic protected health information to allow access only to those persons or software programs that have been granted access rights.
+
+Notion's Supporting Configurations: 
+
+Notion’s SAML SSO is built upon the SAML 2.0 standard, connecting your Identity Provider (IdP) and workspace(s) for an easier, more secure login experience. Notion supports official configurations for SAML SSO with: Azure, Google, Gusto, Okta, OneLogin, and Rippling.
+
+
+To get started using SAML SSO with Notion, you'll need to complete the following steps:
+
+
+Verify domain(s): To use advanced security features, you must verify ownership of your email domain. This is an automated process that involves adding a TXT record onto your domain’s DNS to verify your ownership of it.
+
+
+Enable SAML SSO: This will toggle the feature on and complete the configuration. For more information on completing the SAML SSO configuration, please refer to this article.
+
+
+Change default login method: Once SAML SSO is enabled for the first time, the default login method will be set to Any method, meaning that users have the option of logging in via SAML or their normal login method. By setting this to Only SAML SSO, this enforces SAML as the login method for your workspace for managed users with verified company emails.
+
+Link additional workspaces: If you have more than one workspace you’d like to configure with SSO, you can do so by reaching out to team@makenotion.com.
+
+Once properly configured, any members signing into your workspace(s) will need to use the verified domain and will need to be authenticated through your identity provider. Enterprise workspace owners are able to bypass by using an alternative login method in case there’s an IdP/SAML SSO failure.
+
+HIPAA Technical Safeguard Requirements: Unique User Identification
+
+Assign a unique name and/or number for identifying and tracking user identity.
+
+Notion's Supporting Configurations: 
+
+Notion has a SCIM API which can be used to provision, manage, and de-provision members and groups. Workspace owners can find the required API key by going to Settings → Security & identity → SCIM Configuration and clicking to view the token.
+
+Please see our SCIM documentation for the latest information on how you can interact with Notion’s SCIM API. Notion supports official SCIM applications with Google, Gusto, Okta, OneLogin, and Rippling.
+
+HIPAA Technical Safeguard Requirements: Emergency Access Procedure
+
+Establish (and implement as needed) procedures for obtaining necessary electronic protected health information during an emergency.
+
+Notion's Supporting Configurations: 
+
+Content search provides Enterprise workspace owners with visibility into workspace content to improve governance of the workspace and resolve page access issues. Content search allows you to:
+
+• View who has access to a page
+• Modify the permissions of a page
+• Discover and re-assign abandoned pages from former employees
+
+You can export a Notion page, database, or entire workspace at any time.
+
+For Notion Mail and Notion Calendar, enable HIPAA compliance with Google Workspace.
+
+HIPAA Technical Safeguard Requirements: Automatic Logoff
+
+Implement electronic procedures that terminate an electronic session after a predetermined time of inactivity.
+
+Notion's Supporting Configurations: 
+
+Set custom session duration: For managed users on the Enterprise Plan, Notion has a default session duration of 180 days. However, workspace owners can customize their session duration from 1 hour to 180 days.
+
+Force logout managed users: Force logout for individual users or for all workspace users at once.
+
+Force password reset: Force password reset for individual users or for all workspace users at once.
+
+If you de-provision a user via SCIM, they will be removed from the workspace and their session will be terminated.
+
+HIPAA Technical Safeguard Requirements: Audit Controls
+
+Implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.
+
+Notion's Supporting Configurations: 
+
+Enterprise workspace owners have access to an Audit Log via Settings. This gives an overview of a large range of events that have occurred in the workspace.
+
+This can be especially helpful for identifying potential security issues, investigating suspicious behavior, and troubleshooting access. The workspace audit log can be exported in CSV format.
+
+Enterprise customers can also utilize our Data Loss Prevention (DLP) partner integrations to discover, classify, and protect sensitive data in Notion.
+
+For Notion Mail and Notion Calendar, enable HIPAA compliance with Google Workspace.
+
+HIPAA Technical Safeguard Requirements: Integrity Controls
+
+Implement policies and procedures to protect electronic protected health information from improper alteration or destruction.
+
+Implement electronic mechanisms to corroborate that electronic protected health information has not been altered or destroyed in an unauthorized manner.
+
+Implement security measures to ensure that electronically transmitted electronic protected health information is not improperly modified without detection until disposed of.
+
+Notion's Supporting Configurations: 
+
+Disable public page sharing: This will disable the Share to web option in the Share menu on every page in this workspace.
+
+Disable guests: This prevents anyone from inviting people outside the workspace to any page. You don’t need to use this control if you’d like to invite guests as needed, but note that Notion may not be used to communicate with patients, plan members, or their families and employers. If you need to enable guests, we recommend turning on guest requests. This implements an approval process so that you can have guests in your workspace while ensuring HIPAA compliance.
+
+Disable moving or duplicating pages to other workspaces: This prevents anyone from moving or duplicating pages to other workspaces via the Move To or Duplicate action.
+
+Disable export: This prevents anyone from exporting as Markdown, CSV, or PDF.
+
+Disable workspace creation: This prevents anyone from creating new workspace(s) without approval.
+
+Disable or allowlist third party extensions: This prevents anyone from adding non-approved 3rd party extensions to your Notion workspace.
+
+Disable external workspace access: This prevents managed users from joining or accessing external workspace outside of your organization.
+
+For Notion Mail and Notion Calendar, enable HIPAA compliance with Google Workspace.
+
+HIPAA Technical Safeguard Requirements: Person or Entity Authentication
+
+Implement procedures to verify that a person or entity seeking access to electronic protected health information is the one claimed.
+
+Notion's Supporting Configurations: 
+
+Disable profile changes: This prevents managed users from changing their own profile information to avoid impersonations.
+
+Domain management: Domain refers to the email address domain associated with a Notion account. Domain verification allows workspace owners to claim ownership over a domain, which will unlock domain management settings.
+
+Disable guests: This prevents anyone from inviting people outside the workspace to any page. You don’t need to use this control if you’d like to invite guests as needed, but note that Notion may not be used to communicate with patients, plan members, or their families and employers. If you need to enable guests, we recommend turning on guest requests. This implements an approval process so that you can have guests in your workspace while ensuring HIPAA compliance.
+
+Suspend or delete a managed user account: Suspend or delete managed user accounts from the user management dashboard.
+
+Disable managed user account deletion: Prevent managed users from deleting their accounts on their own.
+
+HIPAA Technical Safeguard Requirements: Data Retention & Disposal
+
+Implement policies and procedures to address the final disposition of electronic PHI and/or the hardware or electronic media on which it is stored.
+
+Notion's Supporting Configurations: 
+
+Custom data retention settings allow Enterprise workspace owners to have control over when users’ pages are deleted from Trash, and how long they can be retained for afterwards.
+
+We keep backups of our database, which allows us to restore a snapshot of your content in the past 30 days if you need it.
+
+For Notion Mail and Notion Calendar, enable HIPAA compliance with Google Workspace.
+
+HIPAA Technical Safeguard Requirements: Transmission Security
+
+Implement technical security measures to guard against unauthorized
+access to electronic protected health information that is being transmitted over an electronic communications network.
+
+Implement a mechanism to encrypt electronic protected health information whenever deemed appropriate.
+
+Notion's Supporting Configurations: 
+
+Encryption at rest: Customer data is encrypted at rest using AES-256. Customer data is encrypted when on Notion’s internal networks, at rest in Cloud storage, database tables, and backups.
+
+Encryption in transit: Data sent in-transit is encrypted using TLS 1.2 or greater.
+
+
+Note: Enterprise workspace owners are able to bypass by using an alternative login method in case there’s an IdP/SAML SSO failure.
+
+Enable HIPAA compliance
+To enable HIPAA compliance for your workspace:
+
+Go to Settings in your sidebar → Workspace settings → HIPAA compliance → Activate.
+
+A window will appear where you can read the full signed BAA before you select Accept.
+
+Once you’ve accepted, you’ll see confirmation that HIPAA compliance has been enabled. You’ll also receive an email confirming that your workspace has accepted the HIPAA BAA.
+
+
+Deactivate HIPAA compliance
+If you’d like to turn off HIPAA compliance for your workspace:
+
+Go to Settings in your sidebar → Workspace settings → HIPAA compliance → Deactivate.
+
+In the window that appears, select Disable.
+
+Once you’ve accepted, you’ll see confirmation that HIPAA compliance has been disabled. This means you can no longer store Protected Health Information (PHI) in your Notion workspace. You’ll also receive a confirmation email.
+
+FAQs
+What is the cost of enabling HIPAA compliance?
+
+HIPAA compliance is available free of charge to customers on the Enterprise plan.
+
+Customers must agree to Notion's Business Associate Agreement and utilize Notion in a manner that complies with HIPAA, the BAA, and the HIPAA Product Configuration Guide.
+
+What are the product limitations of enabling HIPAA compliance?
+
+Notion may not be used to communicate with patients, plan members, or their families or employers.
+
+Users may not include PHI in any of the following fields or functionality:
+
+Workspace or organization names
+
+Teamspace names
+
+File names
+
+Account/user profile
+
+Name of user groups
+
+Support requests and attachments to a support request must not include any PHI.
+
+Any Beta Services are not covered by the BAA and therefore may not be used or deployed in a manner that processes protected health information.
+
+Will integrations still be available?
+
+Yes, previously enabled apps will remain enabled. Admins should review existing integrations used to ensure they are compliant. Admins can choose to disable the addition of new integrations that are not allowlisted.

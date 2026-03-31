@@ -1,0 +1,28 @@
+I Can’t Access Notion Or Page
+
+I can’t access Notion
+If Notion is down or you’re unable to access Notion:
+
+Check our status page and X for live updates on any known issues.
+
+Try disabling any firewalls, VPNs, or privacy or security software you have on your device that may be blocking access to Notion.
+
+Check for any ISPs blocking the .so or notion.so domain.
+
+See if the issue is with your DNS. Changing your DNS to a public one like 8.8.8.8 or 1.1.1.1 might resolve the issue. You can learn more about how to do this here →
+
+Try a different browser, device, or platform. For example, if you’re using Notion’s desktop app, see if the issue persists when you use Notion in your browser.
+
+
+I can't access my own page
+
+Check our status page and X for live updates on any known issues.
+
+If you can’t access your own Notion page and you’re prompted to request access to it:
+
+If you have multiple Notion accounts or you’ve recently changed your email, make sure you’re logged into the correct Notion account. You’ll need to be accessing the page using the account that you used to create the page.
+
+It’s possible your page has been moved or your page’s permissions have been changed by a workspace admin. Ask someone to restore your access to your page.
+
+If you get an error telling you to try again when you click to request access to the page, this could mean there’s a bug. Try accessing the document from a different browser or clear your cache and open the page again.
+

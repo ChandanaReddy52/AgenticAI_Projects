@@ -1,0 +1,104 @@
+Passkeys
+
+In this Article
+Learn how to log into Notion using passkeys, a simple and secure alternative to passwords 🔑
+
+Contents
+What are passkeys?
+Set up a passkey
+Types of passkeys Notion supports
+Log in with a passkey
+Remove a passkey
+
+What are passkeys?
+Passkeys are secure, easy-to-use alternatives to passwords. Instead of remembering your password, you can sign into Notion using the same method you use to unlock your device. Behind the scenes, passkeys use public-key cryptography to create unique security keys that work only with your Notion account.
+
+Passkeys are simpler and more secure than passwords, even with two-step verification enabled. Since passkeys are stored on your device and require biometric authentication like Face ID or Touch ID, they provide better protection against phishing attacks than traditional login credentials.
+
+
+Note: In order to use passkeys, you can’t be in an organization that requires login using an identity provider such as Okta, Microsoft Azure, or Google Workspace.
+
+Set up a passkey
+To set up a passkey on web or desktop:
+
+Go to Settings in your sidebar → {your name}.
+
+Under Account security, select Add passkey.
+
+Choose where you’d like to store your passkey: in iCloud Keychain, Chrome Profile, or Password Manager. You can add up to five passkeys.
+
+
+To set up a passkey on mobile:
+
+Go to Settings in your sidebar.
+
+Under My settings, select Add passkey.
+
+Choose where you’d like to store your passkey: in iCloud Keychain, Chrome Profile, or Password Manager. You can add up to five passkeys.
+
+Types of passkeys Notion supports
+Notion supports two kinds of passkeys so you can choose the method that works best for you:
+
+Synced passkeys
+
+Operating systems: Use passkeys stored in your operating system’s credential manager such as Apple’s iCloud Keychain or Google’s Password Manager.
+
+Password manager passkeys: Use passkeys stored in password managers like 1Password or Bitwarden.
+
+Device-bound passkeys
+
+Hardware security keys: Use physical security keys that support the FIDO2 standard, such as YubiKey.
+
+Mobile device passkeys: Use your phone or tablet's built-in authentication methods.
+
+Log in with a passkey
+To log in using a passkey:
+
+In the login page, select Continue with Passkey.
+
+Select the location of your passkey and provide confirmation of the passkey. This will usually be done using a biometric, like Face ID or Touch ID.
+
+
+Remove a passkey
+To remove a passkey on web or desktop:
+
+Go to Settings in your sidebar → {your name}.
+
+Under Account security, select Manage passkeys.
+
+Delete the passkey that you would like to remove.
+
+You can optionally delete the passkey from your device or password manager as well.
+
+To remove a passkey on mobile:
+
+Go to Settings in your sidebar.
+
+Under My settings, select Manage passkeys.
+
+Delete the passkey that you would like to remove.
+
+You can optionally delete the passkey from your device or password manager as well.
+
+
+
+
+FAQs
+Do I need to set up a passkey to use Notion?
+
+Passkeys aren’t required for Notion users, but we highly recommend them as an extra layer of security to protect your work.
+
+Note that this feature is designed for users who don’t use SAML SSO to log into Notion.
+
+Can I set up different kinds of passkeys at the same time?
+
+I use verification codes to log into Notion. Can I still setup passkeys if I don’t have a password for Notion?
+
+What are the costs or fees associated with passkeys?
+
+What if I lose my phone or verification device that I use for passkeys? How do I log in?
+
+How do I troubleshoot issues with passkeys?
+
+I’m a workspace owner. Can I enforce passkeys for everyone in my workspace?
+

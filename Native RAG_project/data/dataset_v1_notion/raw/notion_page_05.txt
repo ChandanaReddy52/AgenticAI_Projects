@@ -1,0 +1,35 @@
+What is a database?
+
+In this Article
+Databases are a core feature in Notion that help you manage and organize your pages. Let's explain what they are and how they can help you level up your workspace 🗄
+Contents
+Databases are collections of pages
+Databases are pages themselves
+Databases have properties
+Databases can display the same content in different ways
+Databases can contain multiple sources
+Databases are collections of pages
+Think of Notion databases as filing cabinets or notebooks. Each database serves as a container, letting you easily organize multiple Notion pages in a single structure. In the screenshot below, every row of the table is a page within the database.
+
+Database
+This gives you a birds' eye view of an entire collection of pages at once. When you need to dive deeper, each page in a database can be opened, revealing its detailed contents.
+
+
+Databases are pages themselves
+But wait - each database is also a page itself! This is powerful, because it allows you to move and nest databases alongside other content, just like any other page.
+
+Databases have properties
+To help you organize all of the pages within a database, properties can be added to contextualize, label, and augment each individual item.
+
+You can then search, filter, and sort by these property values. 
+
+Databases can display the same content in different ways
+The contents of a database can be visualized as a table, list, board, calendar, gallery, timeline, or chart — whatever makes the information the most useful.
+
+
+
+Databases can contain multiple sources
+Let’s say you want to create an all-in-one CRM database that stores information on contacts, companies, and deals. You can build your contact information, company information, and deal information all in the same database, while also treating them as separate data sources.
+
+Alternatively, maybe your team is currently managing projects and tasks in one database, and OKRs in another. You can link the OKR database in your projects and tasks database, bring all of these sources into one place so you can see all of your team’s progress side by side without jumping from one part of your workspace to another.
+

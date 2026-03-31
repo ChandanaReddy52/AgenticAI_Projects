@@ -1,0 +1,70 @@
+Troubleshooting: Reset Notion
+
+Contents
+Reset Notion for desktop
+Reset Notion for web
+Chrome and Microsoft Edge
+Safari
+Firefox
+Reset Notion for mobile
+
+Check our status page and X for live updates on any known issues.
+
+
+Note:
+
+Resetting your app or browser will log you out of any active Notion accounts. Make sure you have your login information handy so you can sign back in after resetting!
+
+Not seeing your menu bar? On Windows, you may have to press alt to see it appear.
+
+Resetting Notion may help resolve issues like content not displaying correctly.
+
+Reset Notion for desktop
+To reset Notion for desktop:
+
+Select View in your device’s menu bar → Force reload.
+
+Select Help in your menu bar → Troubleshooting → Reset & Erase All Local Data.
+
+Close Notion, then:
+
+On Mac: Open Finder, then select Go → Go To Folder in your menu bar. Enter /Users/<USERNAME>/Library/Application Support, then delete Notion.
+
+On Windows: In File Explorer, go to C:\Users\<USERNAME>\AppData\Roaming, then delete Notion.
+
+Download the desktop app again at https://notion.com/download.
+
+
+If you’re getting an error message when trying to delete Notion, make sure of the following:
+
+You’ve quit the Notion app completely (it’s not running in the background or system tray).
+
+There are no Notion processes running in Task Manager.
+
+Then, try deleting the app again.
+
+Reset Notion for web
+Chrome and Microsoft Edge
+Open Developer Tools using cmd + option + i for Mac, or ctrl + shift + i for Windows.
+
+With Developer Tools open, right click the refresh button in your browser.
+
+Select Empty Cache and Hard Refresh.
+
+In Developer Tools, go to Application and expand the Cookies on the left hand side.
+
+Right click on the Notion link and select Clear.
+
+Safari
+Open the Safari menu in your system menu bar, and select Preferences.
+
+In the Privacy section, select Manage Website Data.
+
+Find and select Notion, then select Remove All.
+
+Firefox
+To the left of the URL, select 🔒 → Clear Cookies and Site Data → Remove.
+
+Reset Notion for mobile
+To reset Notion for mobile, simply delete the app from your device and reinstall it. Don’t worry about losing your Notion data — it’s synced to your account!
+

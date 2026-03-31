@@ -1,0 +1,121 @@
+Create a database
+
+In this Article
+Now we'll create a database and use it to show off essential database actions and features. You'll get to play with database properties, views, filters, and sorts - let's get into it 📈
+Contents
+Create a new database
+Create a database with Notion AI
+Create a database from a template
+Add data to your database
+Open a row as a page
+Create new database views
+Filter and sort your data
+
+Create a new database
+To create a new database:
+
+Create a new page and under Get started with, select ••• → Table. You can also open an existing page and use the slash command /database.
+
+The first column is where you enter the name of your database pages. Each column in a Notion table corresponds to a property that gives your item context. Let's add a task as an example, as well as a status property.
+
+Click a property name, then Edit property and Change type to see all of your property choices.
+
+Create a database with Notion AI
+You can create a database in just seconds using Notion AI. This feature is available to everyone, even if they don’t have Notion AI for their workspace.
+
+From a page
+
+To create a database with Notion AI in an existing page:
+
+Create a new page and under Get started with, select ••• → Table. You can also open an existing page and use the slash command /database.
+
+Select Build with AI in the menu that appears.
+
+Give Notion AI details about the database you want. For example, you could ask it to make you a customer feedback tracker with priority levels, a status, and an assignee.
+
+You’ll get a preview of your database as well as some options for features to add or remove. You can also prompt Notion AI to make specific changes.
+
+Once your database looks good, select Continue.
+
+Choose how you prefer to visualize your database items and select Done.
+
+From Home
+
+To create a database with Notion AI from Home:
+
+In Home, toggle to Build mode in the Notion AI widget.
+
+Give Notion AI details about the database you want. For example, you could ask it to make you a customer feedback tracker with priority levels, a status, and an assignee.
+
+You’ll get a preview of your database as well as some options for features to add or remove. You can also prompt Notion AI to make specific changes.
+
+Once your database looks good, select Continue.
+
+Choose how you prefer to visualize your database items and select Done.
+
+
+Note:
+
+Notion AI can create new databases but can’t edit existing databases.
+
+Notion AI can’t create pages in your database, database automations, forms, charts, or database page templates.
+
+Databases created with Build mode in Home will be added to your workspace as a new page. If you want to use Notion AI to build a database in a specific page, navigate to that page and create a new database with Notion AI in that page. You can also move your database created by AI to another page in your workspace.
+
+Create a database from a template
+You can also use some existing templates to get started! To do this:
+
+Create a new page and under Get started with, select Database. You can also open an existing page and use the slash command /database.
+
+Select one of the Suggested templates. You can also select More templates to explore other options.
+
+Select the template you want to use → Get started.
+
+Add data to your database
+For this example, we'll create a task database.
+
+Add one or more tasks you’re working on by selecting New page.
+
+Add a priority property to your tasks by selecting Add property. Give the property a name, then select the property type. Click on the property name in your database and select Edit property. Select Add an option in the menu that appears to add options, like P1, P2, and P3.
+
+Add a new property using the + button to the right of the Priority property. Name the property Due date and select the Date property type. Now when you click on a cell under Due Date, you'll see the date picker.
+
+Open a row as a page
+Every item in a Notion database is also a whole page of its own! You can add any content you want inside, including other databases.
+
+To open a row as a page, hover over a cell in the Name column and click OPEN.
+
+You can add or edit any properties.
+
+You can also add additional content into the body of the page.
+
+Create new database views
+You can create different views of the same data. Put it into a board, a calendar, a list, a gallery, or a timeline — depending on your needs. Let's try one.
+
+Click + next to the name of your database.
+
+In the menu that appears, select Board.
+
+This displays rows from your table into cards on a board, grouped by status. Clicking on a card still opens it as a page. It's all the same content, just visualized in a different way!
+
+
+
+Tip: Different views are good for different things, and you can have as many as you need!
+
+Gallery view is great if you're storing images in your database.
+
+Lists are helpful for minimalist storage of documentation.
+
+Calendar view displays your pages by an assigned date property.
+
+Timelines are useful for visualizing project dates and length.
+
+Filter and sort your data
+Filter and sort by property to zoom into specific database pages. To do this:
+
+Select the settings menu at the top of your database → Filter or Sort.
+
+hc: db settings icon
+Select the property that you want to filter or sort by. For example, you might want to filter to see only the tasks that are P1 or sort due dates in ascending order.
+
+You'll see your database change in real time based on your filter and sort criteria. You can add as many filters and sorts as you want, and each view has its own filter and sorts.

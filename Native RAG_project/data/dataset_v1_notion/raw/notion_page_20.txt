@@ -1,0 +1,40 @@
+Troubleshooting: I Can’t Log In
+
+Contents
+If you forgot your password
+If you lost access to your email
+
+Check our status page and X for live updates on any known issues.
+
+If you forgot your password
+If you don’t remember your Notion password, you can reset it. To do so:
+
+Go to notion.so/login in your web browser.
+
+Select Forgot password?, enter your email address, then select Send reset link.
+
+We'll send a link to your email address. Open the link to be taken to Settings in your Notion workspace, where you can set a new password.
+
+If you do not set a new password at this point, your password will simply be removed and you can log in using temporary codes.
+
+Log in again.
+
+If you lost access to your email
+If you no longer have access to the email address you used to sign up for Notion, you can change this email in Notion settings. You’ll need to have a permanent password for your account already. To do so:
+
+Go to Settings in your sidebar → {your name}.
+
+Under Account security, select Change email.
+
+Enter your password, then select Continue.
+
+Enter your new email, then select Send verification code. Once you receive this code at your new email address, enter it.
+
+Select Change email.
+
+Log in again.
+
+
+Still having trouble logging in? Contact us at team@makenotion.com.
+
+

@@ -1,0 +1,4 @@
+dataset_name,description,mutable,source_of_truth,used_by_tools
+doctors,Master list of doctors and specialties,false,doctors.csv,FindDoctorsTool
+appointment_slots,Current appointment availability,true,appointment_slots.csv,CheckAvailabilityTool;BookAppointmentTool
+booking_history,Audit log of all bookings,true,booking_history.csv,BookAppointmentTool

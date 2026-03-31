@@ -1,0 +1,296 @@
+[
+  {
+    "chunk_id": "recall_195_tsb_desc_0",
+    "document_id": "recall_195_abs_fire",
+    "document_type": "recall",
+    "recall_id": "195",
+    "recall_role": "tsb",
+    "recall_severity": "high",
+    "warranty_type": null,
+    "coverage_type": null,
+    "component_categories": [
+      "ABS"
+    ],
+    "model": "Hyundai Tucson",
+    "model_year_start": 2016,
+    "model_year_end": 2021,
+    "publication_year": 2021,
+    "chapter": null,
+    "section": "recall_description",
+    "word_count": 212,
+    "text": "Circulate To: General Manager, Service Manager, Parts Manager, Warranty Manager, Service \nAdvisors, Technicians, Body Shop Manager, Fleet Repair \n \nTechnical Service Bulletin \nGROUP NUMBER \nRECALL 21-01-010H \nDATE MODEL(S) \nFebruary, 2021 Tucson (TL) \nSUBJECT: \n2016-2021MY TUCSON (TL) ABS FUSE KIT INSTALLATION AND \nSOFTWARE UPDATE  \n(RECALL CAMPAIGN 195) \nThis TSB supersedes TSB# 20 -01-040H, expanding model year applicability and adding \nprocedures / parts information for 2016-2018MY vehicles. \n \nDescription: Certain 2016-2021MY Tucson (TL) vehicles may be equipped with Anti-lock Brake \nSystem (“ABS”) modules that over time could exhibit an electrical short. An electrical short in the ABS \nmodule could increase the risk of an engine compartment fire. This bulletin describes the procedure \nto install a fuse kit into the ABS module electrical circuit and if necessary, update the ABS/ESC \nsoftware. \n \n   \n \n \nApplicable Vehicles: Certain 2016-2021MY Tucson (TL) vehicles. \n \n \n \n \n \n \n*** Dealer Stock and Retail Vehicles *** \n \nDealers must perform this Recall Campaign on all affected vehicles prior to customer retail delivery \nand whenever an affected vehicle is in the shop for any maintenance or repair. \n \nWhen a vehicle arrives at the service department, access Hyundai Motor America’s “Warranty \nVehicle Information Screen (VIS)” via WEBDCS to identify open Campaigns. \n \n IMPORTANT \nRECALL195 – ABS FUSE KIT INSTALLATION AND SOFTWARE UPDATE  \nTSB #: 21-01-010H Page 2 of 11 \n SUBJECT: \nSUBJECT:"
+  },
+  {
+    "chunk_id": "recall_195_tsb_parts_1",
+    "document_id": "recall_195_abs_fire",
+    "document_type": "recall",
+    "recall_id": "195",
+    "recall_role": "tsb",
+    "recall_severity": "high",
+    "warranty_type": null,
+    "coverage_type": null,
+    "component_categories": [
+      "ABS"
+    ],
+    "model": "Hyundai Tucson",
+    "model_year_start": 2016,
+    "model_year_end": 2021,
+    "publication_year": 2021,
+    "chapter": null,
+    "section": "parts_and_warranty",
+    "word_count": 57,
+    "text": "PART NAME FIGURE/PART NUMBER QTY. \nFuse Repair Kit \n \n(1) U-Type Crimp \nConnector \n(2) Heat Shrink \nTubing \n(3) Micro Fuses \n(4) Cable Ties \n(5) Labels \n(6) Red Lead Wire \n(7) White Lead \nWire \n \n1 \n \n91KIT-D325AQQH  \n(Contains 25A Micro Fuses) \nFor use with HECU P/Ns  \n58920-D3530 and 58920-D3550 \n91KIT-D330AQQH  \n(Contains 30A Micro Fuses) \nFor use with HECU P/N \n 58920-D3100"
+  },
+  {
+    "chunk_id": "recall_195_tsb_service_0_2",
+    "document_id": "recall_195_abs_fire",
+    "document_type": "recall",
+    "recall_id": "195",
+    "recall_role": "tsb",
+    "recall_severity": "high",
+    "warranty_type": null,
+    "coverage_type": null,
+    "component_categories": [
+      "ABS"
+    ],
+    "model": "Hyundai Tucson",
+    "model_year_start": 2016,
+    "model_year_end": 2021,
+    "publication_year": 2021,
+    "chapter": null,
+    "section": "service_procedure_part1",
+    "word_count": 186,
+    "text": "1. \n \n \n \nIf applicable, record the customer’s radio \npreset stations and turn the ignition switch \nOFF. \n2. Remove the air intake duct clips (A) and \nremove air intake duct (B).  \n3. Disconnect the battery negative (-) terminal \n(C), then disconnect the positive (+) \nterminal (D). Remove the battery mounting \nbracket (E), and remove the battery. \n \nBattery Negative (-) Terminal Tightening \nTorque:  \n3.9 ~ 5.9 Nm (0.4 ~ 0.6 kgf.m, 2.9 ~ 4.3 lb-\nft) \n \nBattery Positive (+) Terminal Tightening \nTorque:  \n7.8 ~ 9.8 Nm (0.8 ~ 1.0 kgf.m, 5.8 ~ 7.2 lb-\nft) \n \nBattery Mounting Bolt Tightening \nTorque:  \n8.8 ~ 13.7 Nm (0.9 ~ 1.4 kgf.m, 6.5 ~ 10.1 \nlb-ft\n) \n \n \n \nIf the “ABS”, “ESC” or “Brake” indicator lamps are illuminated, refer to the appropriate \nsection of the repair manual prior to installing the ABS Fuse Kit. \nNOTICE \nA \nB \nA \nC \nD \nE \nRECALL195 – ABS FUSE KIT INSTALLATION AND SOFTWARE UPDATE  \nTSB #: 21-01-010H Page 4 of 11 \n SUBJECT: \nSUBJECT: \n4. Loosen the air duct clamp (F), remove the \nair cleaner mounting bolt (G) and remove \nthe air cleaner body. \n \nAir Duct Clamp Tightening Torque:"
+  },
+  {
+    "chunk_id": "recall_195_tsb_service_1_3",
+    "document_id": "recall_195_abs_fire",
+    "document_type": "recall",
+    "recall_id": "195",
+    "recall_role": "tsb",
+    "recall_severity": "high",
+    "warranty_type": null,
+    "coverage_type": null,
+    "component_categories": [
+      "ABS"
+    ],
+    "model": "Hyundai Tucson",
+    "model_year_start": 2016,
+    "model_year_end": 2021,
+    "publication_year": 2021,
+    "chapter": null,
+    "section": "service_procedure_part2",
+    "word_count": 171,
+    "text": "2.9 ~ 4.9 N.m (0.3 ~ 0.5 kgf.m, 2.2 ~ 3.6 \nlb-ft) \n \nAir Cleaner Bolt Tightening Torque: \n7.8 ~ 9.8 N.m (0.8 ~ 1.0 kgf.m, 5.8 ~ 7.2 \nlb-ft) \n5.  \n \n \n \nIf equipped with LED headlamps, \ndisconnect the headlamp connector (H) and \ndisconnect the wire harness clip (I). \n6. Disconnect the wire harness clip (J) from \nthe ECM bracket and remove the three \nmounting fasteners (K). \n \nLeave the ECM electrical connector \nconnected and move the ECM away from \nthe junction box. \n \nECM Fastener Tightening Torque: \n9.8 ~ 11.8 N.m (1.0 ~ 1.2 kgf.m, 7.2 ~ 8.7 \nlb-ft) \n \nF \nG \nJ \nK \nK \nK \nI \nH \nIf equipped with halogen headlamps, \nproceed to Step 6. \n \nNOTICE \nRECALL 195 – ABS FUSE KIT INSTALLATION AND SOFTWARE UPDATE  \nTSB #: 21-01-010H Page 5 of 11 \n \nSUBJECT: \nSUBJECT: \n7. Remove the junction box upper cover. \nRemove the junction box mounting nut and \nbolt (L).  \n \n \nJunction Box Nut Tightening Torque: \n4.9 ~ 7.8 N.m (0.5 ~ 0.8 kgf.m, 3.6 ~ 5.8 \nlb-ft) \n \nJunction Box Bolt Tightening Torque:"
+  },
+  {
+    "chunk_id": "recall_195_tsb_service_2_4",
+    "document_id": "recall_195_abs_fire",
+    "document_type": "recall",
+    "recall_id": "195",
+    "recall_role": "tsb",
+    "recall_severity": "high",
+    "warranty_type": null,
+    "coverage_type": null,
+    "component_categories": [
+      "ABS"
+    ],
+    "model": "Hyundai Tucson",
+    "model_year_start": 2016,
+    "model_year_end": 2021,
+    "publication_year": 2021,
+    "chapter": null,
+    "section": "service_procedure_part3",
+    "word_count": 206,
+    "text": "6.9 ~ 9.8 N.m (0.7 ~ 1.0 kgf.m, 5.0 ~ 7.2 \nlb-ft  \n8. Cut and remove the cable tie at the base of \nthe lower junction box cover (M). \n9. Gently pry the junction box body away from \nthe vehicle body to release the junction box \nlocating pin (N). \n \nRelease the six locking tabs around the \noutside of the junction box and separate the \nlower junction box cover (O) from the \njunction box.  \n \n \n \nL \nL \nN \nM \nO \nRECALL195 – ABS FUSE KIT INSTALLATION AND SOFTWARE UPDATE  \nTSB #: 21-01-010H Page 6 of 11 \n SUBJECT: \nSUBJECT: \n10. Locate the 40A ABS1 and 40A ABS2 \nportion of the multifuse in the junction box \n(P).  \n11. Locate the red wire and white wire (Q) \nexiting the 40A ABS1 and 40A ABS2 \nmultifuse on the underside of the junction \nbox. \n \n \nP \nP \nP \nP \nP \nQ \nRECALL 195 – ABS FUSE KIT INSTALLATION AND SOFTWARE UPDATE  \nTSB #: 21-01-010H Page 7 of 11 \n \nSUBJECT: \nSUBJECT: \n12. Cut the ABS1 and ABS2 fuse wires (red \nwire and white wire) approximately 50mm \n(~2”) from the underside of the junction box \n(R).  \n13. Wrap the ends of the white wire and red \nwire attached to the multifuse with black \nelectrical tape (S)."
+  },
+  {
+    "chunk_id": "recall_195_tsb_service_3_5",
+    "document_id": "recall_195_abs_fire",
+    "document_type": "recall",
+    "recall_id": "195",
+    "recall_role": "tsb",
+    "recall_severity": "high",
+    "warranty_type": null,
+    "coverage_type": null,
+    "component_categories": [
+      "ABS"
+    ],
+    "model": "Hyundai Tucson",
+    "model_year_start": 2016,
+    "model_year_end": 2021,
+    "publication_year": 2021,
+    "chapter": null,
+    "section": "service_procedure_part4",
+    "word_count": 284,
+    "text": "14. Connect the supplied lead wires (T) to the \nun-capped ends of the red wire and white \nwire using the supplied u-type crimp \nconnectors and heat shrink tubing. \n \n \n \nR \nSlide the heat shrink tubing over the \nwire prior to crimping the lead wire. \nNOTICE \nT \nS \nRECALL195 – ABS FUSE KIT INSTALLATION AND SOFTWARE UPDATE  \nTSB #: 21-01-010H Page 8 of 11 \n SUBJECT: \nSUBJECT: \n15. Heat the heat shrink tubing (U) using a heat \ngun. \n16. Insert the red lead wire into the open space \nof the empty fuse holder (V) and the white \nlead wire into the adjacent open space (W).   \n \n  \n \n \nUse caution when using the \nheat gun to avoid damaging the \nwiring. \nCAUTION \n! \nU \nW \n V \nX \nInsert the lead wires with the terminal \ncrimp facing upward (X). Be sure to \ninsert until a click is heard and the \nterminals are secure. \nNOTICE \nRECALL 195 – ABS FUSE KIT INSTALLATION AND SOFTWARE UPDATE  \nTSB #: 21-01-010H Page 9 of 11 \n \nSUBJECT: \nSUBJECT: \n17.  Install the supplied micro fuses in the new \nfuse locations (Y).  \n18. Reattach the lower junction box cover to the \njunction box. Install the supplied cable tie in \nthe same position as the cable tie that was \npreviously removed (Z).  \n19. \n20. \n \n \n \nAttach the labels (AA) to the inside of the \njunction box upper cover and install the \njunction box cover. \n \nReassemble the vehicle in the reverse \norder of component removal. \n \n \n \nY \nZ \nAA \nAA \nHECU part number 58920-D3530 \nrequires 25A micro fuses  \n \nHECU part number 58920-D3550 \nrequires 25A micro fuses \n \nHECU part number 58920-D3100 \nrequires 30A micro fuses  \nNOTICE \nRECALL195 – ABS FUSE KIT INSTALLATION AND SOFTWARE UPDATE  \nTSB #: 21-01-010H Page 10 of 11 \n SUBJECT: \nSUBJECT:"
+  },
+  {
+    "chunk_id": "recall_195_tsb_service_4_6",
+    "document_id": "recall_195_abs_fire",
+    "document_type": "recall",
+    "recall_id": "195",
+    "recall_role": "tsb",
+    "recall_severity": "high",
+    "warranty_type": null,
+    "coverage_type": null,
+    "component_categories": [
+      "ABS"
+    ],
+    "model": "Hyundai Tucson",
+    "model_year_start": 2016,
+    "model_year_end": 2021,
+    "publication_year": 2021,
+    "chapter": null,
+    "section": "service_procedure_part5",
+    "word_count": 61,
+    "text": "21. Confirm the hydraulic unit assembly part \nnumber (BB). \n \nIf the Part Number is 58920-D3550 or \n58920-D3100, software update is not \nrequired. Start the engine. Confirm the \n“ABS”, “ESC” and “Brake” indicator lamps \nare not illuminated, clear any incidental \nDTCs and reprogram the customer’s radio \npreset stations. \n \nIf the Part Number is 58920-D3530, \nproceed to the ABS/ESC software update \nprocedure below."
+  },
+  {
+    "chunk_id": "recall_195_tsb_software_7",
+    "document_id": "recall_195_abs_fire",
+    "document_type": "recall",
+    "recall_id": "195",
+    "recall_role": "tsb",
+    "recall_severity": "high",
+    "warranty_type": null,
+    "coverage_type": null,
+    "component_categories": [
+      "ABS"
+    ],
+    "model": "Hyundai Tucson",
+    "model_year_start": 2016,
+    "model_year_end": 2021,
+    "publication_year": 2021,
+    "chapter": null,
+    "section": "software_update_procedure",
+    "word_count": 265,
+    "text": "GDS Information:  \nEVENT# DESCRIPTION \n628* TL- ESC CONTROL LOGIC IMPROVEMENT \n* Use the latest event that appears in the ABS/ESC Auto Mode event list for the particular \nvehicle. \n \nROM ID Information Table: \nMODEL ESC P/N ROM ID \nOLD NEW \nTucson \n(TL) \n58900-D3530 TL ESC 1.00 1.02  \nY06GAF1E11-2-8730 \nTL ESC 1.00 1.04  \nY06GAG1F11-2-A921 \n58900-D3530 \n58900-D3630 \nTL ESC 1.00 1.03  \nY06GAF1F11-2-9520 \nTL ESC 1.00 1.04  \nY06GAG1F11-2-A921 \n58900-D7530 \n58900-D7630 \nTL ESC 1.00 1.03  \nY16GAG1D11-2-9216 \nTL ESC 1.00 1.04  \nY16GAH1D11-2-A922 \n58900-D7560 \n58900-D7660 \nTL ESC 1.00 1.04  \nY16GAH1D11-2-9217 \nTL ESC 1.00 1.05  \nY16GAI1D11-2-A923 \n \nManual Mode Password Information Table: \nMENU PASSWORD \nTL ESC 58900-D3530/630 3530 \nTL ESC 58900-D7530/630 7530 \nTL ESC 58900-D7560/660 7560 \n \nThis Service Procedure is performed using GDS-mobile. For update information and general \nprecautions, please refer to TSB #15-GI-001. \n \nManual mode should only be performed when the Auto update fails. \n \nIf the auto update fails, turn the ignition OFF for 10 seconds, then back ON again to reset \nthe control unit before performing the manual update. \nNOTICE \nBB \nRECALL 195 – ABS FUSE KIT INSTALLATION AND SOFTWARE UPDATE  \nTSB #: 21-01-010H Page 11 of 11 \n \nSUBJECT: \nSUBJECT: \n1. \n \n2. \n \n3. \n \n \n \n \n4. \n \n \n \n \n5. \nSelect ECU Upgrade.  \n \nSelect ABS/ESC as the system to update. \n \nCheck the current version of the ABS/ESC \nROM ID and compare it to the ROM ID \nInformation Table listed above before \nattempting to update the ABS/ESC system. \n \nPerform GDS software update. Refer to \nTSB 15-GI-001 for the tablet-based Mobile \nGDS ECU update procedures. \n \nAfter the software has updated, check for \nDiagnostic Trouble Codes in the ALL \nmenus and erase any DTCs. Reprogram \nthe customer’s radio preset stations."
+  },
+  {
+    "chunk_id": "recall_195_notice_1_problem_0",
+    "document_id": "recall_195_abs_fire",
+    "document_type": "recall",
+    "recall_id": "195",
+    "recall_role": "customer_notice",
+    "recall_severity": "high",
+    "warranty_type": null,
+    "coverage_type": null,
+    "component_categories": [
+      "ABS"
+    ],
+    "model": "Hyundai Tucson",
+    "model_year_start": 2016,
+    "model_year_end": 2021,
+    "publication_year": 2021,
+    "chapter": null,
+    "section": "owner_problem_description",
+    "word_count": 208,
+    "text": "This is an important Safety Recall.\n • Please contact your nearest Hyundai dealer to schedule the repair as soon as possible.\n • This repair will be performed at NO CHARGE to you.\n • To locate your nearest Hyundai dealer and schedule your appointment please visit:\nwww.HyundaiUSA .com/Campaign195\nIMPORTANT SAFETY RECALL\n2016-2021 Tucson\nAnti-lock Brake System (ABS)\nImportante Retiro del Mercado por Motivos de Seguridad — Si tiene preguntas llama 800-633-5151 y oprima “8”\nThis notice applies to your Hyundai, VIN:  XXXXXXXXXXXXXXXXX\nDear <FirstName LastName,>\nThis notice is sent to you in accordance with the National Traffic and Motor Vehicle Safety Act. Hyundai has decided that a defect \nwhich relates to motor vehicle safety exists in your vehicle, with the VIN shown above. Hyundai is conducting a safety recall in the \nUnited States to address a condition with the Anti-lock Brake System (“ABS”) modules in certain model year 2016-2021 Hyundai Tucson \nvehicles produced by Hyundai Motor Company (“HMC”) in South Korea for sale in the U.S. market.\nWhat is the problem?\nThe subject vehicles are equipped with Anti-lock Brake System (“ABS”) modules that could corrode internally and cause an electrical \nshort over time. An electrical short in the ABS module could increase the risk of an engine compartment fire."
+  },
+  {
+    "chunk_id": "recall_195_notice_1_remedy_1",
+    "document_id": "recall_195_abs_fire",
+    "document_type": "recall",
+    "recall_id": "195",
+    "recall_role": "customer_notice",
+    "recall_severity": "high",
+    "warranty_type": null,
+    "coverage_type": null,
+    "component_categories": [
+      "ABS"
+    ],
+    "model": "Hyundai Tucson",
+    "model_year_start": 2016,
+    "model_year_end": 2021,
+    "publication_year": 2021,
+    "chapter": null,
+    "section": "owner_remedy_information",
+    "word_count": 29,
+    "text": "Your Hyundai dealer will install a fuse kit into the ABS module electrical circuit and update the ABS software. This procedure will be \nperformed at NO CHARGE to you."
+  },
+  {
+    "chunk_id": "recall_195_notice_1_action_2",
+    "document_id": "recall_195_abs_fire",
+    "document_type": "recall",
+    "recall_id": "195",
+    "recall_role": "customer_notice",
+    "recall_severity": "high",
+    "warranty_type": null,
+    "coverage_type": null,
+    "component_categories": [
+      "ABS"
+    ],
+    "model": "Hyundai Tucson",
+    "model_year_start": 2016,
+    "model_year_end": 2021,
+    "publication_year": 2021,
+    "chapter": null,
+    "section": "owner_action_required",
+    "word_count": 335,
+    "text": "Please contact your nearest Hyundai dealer to schedule the recall repair as soon as possible.\nOwners should park their vehicles outside until the recall repair is completed. If the Malfunction Indicator Light is illuminated in \nyour vehicle, you should seek service at your Hyundai dealer as soon as possible. The actual time required to perform the repair will \ntake less than one hour, however your vehicle may be needed longer. Therefore, we recommend scheduling a service appointment to \nminimize inconvenience. \nIf you have other questions\nIf you require further assistance, you may contact the Hyundai Customer Care Center at 1-855-371-9460. If you believe that the dealer or \nHyundai has failed or is unable to remedy the defect within a reasonable time, you may submit a complaint to the Administrator, National \nHighway Traffic Safety Administration, 1200 New Jersey Avenue S.E., Washington, D.C. 20590, or call the toll free Vehicle Safety Hot Line \nat 1-888-327-4236 (TTY: 1-800-424-9153), or go to https://www.safercar.gov.\nThank you for your attention to this important safety matter. We apologize for any inconvenience this may have caused you.  \nHyundai Motor America\nHyundai Motor America\nP.O. Box 20839\nFountain Valley, CA 92728-9937\nNHTSA Recall Number: 20V-543\nHyundai Recall Number: 195\nHyundai Motor America\nP.O. Box 20839\nFountain Valley, CA 92728-9937\nIf you are a vehicle lessor, Federal law requires that any vehicle lessor receiving this recall notice must forward a copy of this \nnotice to the lessee within ten days.  \nReimbursement Notification\nIf you paid for repairs related to this recall prior to receiving this notification letter, you may submit your reimbursement request \nelectronically or obtain additional information at:  www.HyundaiUSA.com/Campaign195  or 1-855-371-9460 .\nNo longer own this vehicle?\nChanges to your name, address, or if you no longer own this vehicle — Update your information online at:\nhttps://owners.hyundaiusa.com/content/myhyundai/us/en/contact-us/update-vehicle-ownership.html\nYou can easily connect to this web page by using your cell phone to point your camera (or QR code reader app) at the code below. \nThen select the link which will be displayed on your phone."
+  },
+  {
+    "chunk_id": "recall_195_notice_2_problem_0",
+    "document_id": "recall_195_abs_fire",
+    "document_type": "recall",
+    "recall_id": "195",
+    "recall_role": "customer_notice",
+    "recall_severity": "high",
+    "warranty_type": null,
+    "coverage_type": null,
+    "component_categories": [
+      "ABS"
+    ],
+    "model": "Hyundai Tucson",
+    "model_year_start": 2016,
+    "model_year_end": 2021,
+    "publication_year": 2021,
+    "chapter": null,
+    "section": "owner_problem_description",
+    "word_count": 138,
+    "text": "This notice applies to your Hyundai, VIN: XXXXXXXXX XXXXXXXX\nDear <FirstName LastName,>\nThis notice is sent to you in accordance with the National Traffic and Motor Vehicle Safety Act. Hyundai has decided that a defect which \nrelates to motor vehicle safety exists in your vehicle, with the VIN shown above. Hyundai is conducting a safety recall in the United States \nto address a condition with the Anti-lock Brake System (“ABS”) modules in certain model year 2019 – 2021 Hyundai Tucson vehicles \nproduced by Hyundai Motor Company (“HMC”) in South Korea for sale in the U.S. market.\nWhat is the problem?\nThe subject vehicles are equipped with Anti-lock Brake System (“ABS”) modules that could corrode internally and cause an electrical short \nover time. An electrical short in the ABS module could increase the risk of an engine compartment fire."
+  },
+  {
+    "chunk_id": "recall_195_notice_2_remedy_1",
+    "document_id": "recall_195_abs_fire",
+    "document_type": "recall",
+    "recall_id": "195",
+    "recall_role": "customer_notice",
+    "recall_severity": "high",
+    "warranty_type": null,
+    "coverage_type": null,
+    "component_categories": [
+      "ABS"
+    ],
+    "model": "Hyundai Tucson",
+    "model_year_start": 2016,
+    "model_year_end": 2021,
+    "publication_year": 2021,
+    "chapter": null,
+    "section": "owner_remedy_information",
+    "word_count": 29,
+    "text": "Your Hyundai dealer will install a fuse kit into the ABS module electrical circuit and update the ABS software. This procedure will be \nperformed at NO CHARGE to you."
+  },
+  {
+    "chunk_id": "recall_195_notice_2_action_2",
+    "document_id": "recall_195_abs_fire",
+    "document_type": "recall",
+    "recall_id": "195",
+    "recall_role": "customer_notice",
+    "recall_severity": "high",
+    "warranty_type": null,
+    "coverage_type": null,
+    "component_categories": [
+      "ABS"
+    ],
+    "model": "Hyundai Tucson",
+    "model_year_start": 2016,
+    "model_year_end": 2021,
+    "publication_year": 2021,
+    "chapter": null,
+    "section": "owner_action_required",
+    "word_count": 192,
+    "text": "Please contact your nearest Hyundai dealer to schedule the recall repair as soon as possible.\nOwners should park their vehicles outside until the recall repair is completed.  If the Malfunction Indicator Light is illuminated in \nyour vehicle, you should seek service at your Hyundai dealer as soon as possible. The actual time required to perform the repair will \ntake less than one hour, however your vehicle may be needed longer. Therefore, we recommend scheduling a service appointment to  \nminimize inconvenience.\nIf you have other questions\nIf you require further assistance, you may contact the Hyundai Customer Care Center at 1-855-371-9460. If you believe that the dealer or \nHyundai has failed or is unable to remedy the defect within a reasonable time, you may submit a complaint to the Administrator, National \nHighway Traffic Safety Administration, 1200 New Jersey Avenue S.E., Washington, D.C. 20590, or call the toll free Vehicle Safety Hot Line \nat 1-888-327-4236 (TTY: 1-800-424-9153), or go to https://www.safercar.gov.\nThank you for your attention to this important safety matter. We apologize for any inconvenience this may have caused you. \nHyundai Motor America\nHyundai Motor America\nP.O. Box 20839\nFountain Valley, CA 92728-9937"
+  }
+]

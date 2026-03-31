@@ -1,0 +1,24 @@
+doc_id,filename,title,category,source_url
+D01,notion_page_01.txt,Start here,getting_started,https://www.notion.so/help/start-here
+D02,notion_page_02.txt,What is a block?,getting_started,https://www.notion.so/help/what-is-a-block
+D03,notion_page_03.txt,Create a page,getting_started,https://www.notion.so/help/create-a-page
+D04,notion_page_04.txt,Create a subpage,getting_started,https://www.notion.so/help/create-a-subpage
+D05,notion_page_05.txt,What is a database?,getting_started,https://www.notion.so/help/what-is-a-database
+D06,notion_page_06.txt,Create a database,getting_started,https://www.notion.so/help/create-a-database
+D07,notion_page_07.txt,Start with a template,getting_started,https://www.notion.so/help/start-with-a-template
+D08,notion_page_08.txt,Share your work,getting_started,https://www.notion.so/help/share-your-work
+D09,notion_page_09.txt,Collaborate with people,getting_started,https://www.notion.so/help/collaborate-with-people
+D10,notion_page_10.txt,Account settings & preferences,settings,https://www.notion.so/help/account-settings
+D11,notion_page_11.txt,Notification settings,settings,https://www.notion.so/help/notification-settings
+D12,notion_page_12.txt,Workspace settings,settings,https://www.notion.so/help/workspace-settings
+D13,notion_page_13.txt,Two-step verification,settings,https://www.notion.so/help/two-step-verification
+D14,notion_page_14.txt,Notion IP addresses & domains,settings,https://www.notion.so/help/allowlist-ip
+D15,notion_page_15.txt,HIPAA configuration,settings,https://www.notion.so/help/hipaa
+D16,notion_page_16.txt,Data access consent,settings,https://www.notion.so/help/data-access-consent
+D17,notion_page_17.txt,Delete your account,settings,https://www.notion.so/help/delete-your-account
+D18,notion_page_18.txt,Passkeys,settings,https://www.notion.so/help/passkeys
+D19,notion_page_19.txt,Troubleshooting: Reset Notion,troubleshooting,https://www.notion.so/help/reset-notion
+D20,notion_page_20.txt,Troubleshooting: I Can’t Log In,troubleshooting,https://www.notion.so/help/cant-log-in
+D21,notion_page_21.txt,Troubleshooting: I Can’t Access Notion Or Page,troubleshooting,https://www.notion.so/help/cant-access-notion,
+D22,notion_page_22.txt,Troubleshooting: I Can’t Upload Or View A File,troubleshooting,https://www.notion.so/help/cant-upload-or-view-a-file
+D23,notion_page_23.txt,Troubleshooting: Common Notion Errors,troubleshooting,https://www.notion.so/help/notion-error-messages

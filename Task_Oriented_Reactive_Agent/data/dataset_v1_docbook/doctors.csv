@@ -1,0 +1,16 @@
+doctor_id,doctor_name,specialty,active
+D001,Dr. Smith,Dermatology,true
+D002,Dr. Kim,Dermatology,true
+D003,Dr. Patel,Cardiology,true
+D004,Dr. Lee,Cardiology,true
+D005,Dr. Jones,Neurology,true
+D006,Dr. Wang,Neurology,false
+D007,Dr. Alvarez,Orthopedics,true
+D008,Dr. Rao,Orthopedics,true
+D009,Dr. Thompson,Pediatrics,true
+D010,Dr. Mehta,Pediatrics,true
+D011,Dr. Brown,Gynecology,true
+D012,Dr. Singh,Gynecology,false
+D013,Dr. Wilson,ENT,true
+D014,Dr. Chen,ENT,true
+D015,Dr. Kumar,General Medicine,true

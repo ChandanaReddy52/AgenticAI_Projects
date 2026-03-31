@@ -1,0 +1,36 @@
+Data access consent
+
+In this Article
+Notion employees will only ever access your data for the purposes of troubleshooting problems or recovering content on your behalf, after hearing from you via email or in-app support chat with a request for help. Here's how you can grant access consent🚪
+Contents
+Data access consent on desktop
+Allow data access
+Revoke data access
+Data access consent on mobile
+For more information about Notion's security practices, and how your data is stored on our servers, please refer to our Security & privacy article. Below, you'll find instructions for how to grant Notion's support team consent to access your account.
+
+Data access consent on desktop
+Data access consent - allow
+Allow data access
+When chatting with Notion support via email or in-app chat, you may be asked for consent to access your account, in order to help with troubleshooting or recovery. To allow data access:
+
+Go to Settings in your sidebar → {your name}.
+
+Under Support, toggle on Support access.
+
+Revoke data access
+After you've granted access, Notion's support team will have permission to access your content for 28 days, or until you revoke this access. This timeframe will be visible in-app. To revoke access at any time:
+
+Go to Settings in your sidebar → {your name}.
+
+Under Support, toggle off Support access.
+
+Data access consent on mobile
+To allow or revoke support access on Notion for mobile:
+
+Open Notion on mobile and tap •••.
+
+Tap Settings.
+
+Toggle on or off Support access.
+
