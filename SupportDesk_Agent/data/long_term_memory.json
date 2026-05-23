@@ -1,0 +1,51 @@
+{
+  "escalations": [
+    {
+      "ticket_id": "auto-detected",
+      "customer": "CUST-002",
+      "timestamp": "2026-05-04T01:16:25.677275",
+      "resolved": false
+    }
+  ],
+  "resolved_patterns": [],
+  "customer_notes": {},
+  "user_preferences": {
+    "default_window": "7d",
+    "preferred_sort": "risk_score",
+    "escalation_threshold": 70
+  },
+  "session_count": 15,
+  "last_session": "2026-05-05T23:18:31.008098",
+  "feedback_log": [
+    {
+      "query": "Is there a pattern forming across FreshMart tickets?",
+      "rating": 2,
+      "note": "too brief, missing ticket details",
+      "timestamp": "2026-05-05T00:25:15.584818"
+    },
+    {
+      "query": "Is there a pattern forming across FreshMart tickets?",
+      "rating": 2,
+      "note": "too brief, missing ticket details",
+      "timestamp": "2026-05-05T00:26:51.777925"
+    },
+    {
+      "query": "Is there a pattern forming across FreshMart tickets?",
+      "rating": 5,
+      "note": "much better, detailed and specific",
+      "timestamp": "2026-05-05T00:31:20.148540"
+    },
+    {
+      "query": "Is there a pattern forming across FreshMart tickets?",
+      "rating": 2,
+      "note": "too brief, missing ticket details",
+      "timestamp": "2026-05-05T00:33:03.351399"
+    },
+    {
+      "query": "Is there a pattern forming across FreshMart tickets?",
+      "rating": 2,
+      "note": "too brief, missing ticket details",
+      "timestamp": "2026-05-05T00:33:03.354400"
+    }
+  ]
+}

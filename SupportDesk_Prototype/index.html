@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SupportDesk — AI-Powered Support Portal</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Chart.js — for dashboard analytics -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+  <!-- Stylesheets — load order matters -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- ════════════════════════════════════════
+       SIDEBAR
+       ════════════════════════════════════════ -->
+  <aside class="sidebar">
+
+    <div class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 16 16"><path d="M8 1L15 5v6l-7 4L1 11V5L8 1zm0 2L3 6.5v3L8 13l5-3.5v-3L8 3z"/></svg>
+      </div>
+      <div>
+        <div class="logo-text">SupportDesk</div>
+        <div class="logo-sub">GlobalFoods Inc</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+
+      <div class="nav-section">Workspace</div>
+
+      <button id="nav-dashboard" class="nav-item active" onclick="Router.go('dashboard')">
+        <svg viewBox="0 0 16 16" fill="currentColor"><rect x="1" y="1" width="6" height="6" rx="1"/><rect x="9" y="1" width="6" height="6" rx="1"/><rect x="1" y="9" width="6" height="6" rx="1"/><rect x="9" y="9" width="6" height="6" rx="1"/></svg>
+        Dashboard
+      </button>
+
+      <button id="nav-tickets" class="nav-item" onclick="Router.go('tickets')">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M2 3h12v2H2zm0 4h12v2H2zm0 4h8v2H2z"/></svg>
+        All Tickets
+        <span class="nav-badge" id="nav-count">0</span>
+      </button>
+
+      <button id="nav-new-ticket" class="nav-item" onclick="Router.go('new-ticket')">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1v6H2v2h6v6h2V9h6V7H10V1H8z"/></svg>
+        New Ticket
+      </button>
+
+      <div class="nav-section" style="margin-top:6px">Views</div>
+
+      <button class="nav-item" onclick="Router.go('tickets'); document.getElementById('filter-status').value='open'; filterTickets()">
+        <svg viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="8" r="3"/></svg>
+        Open
+        <span class="nav-badge" id="nav-open">0</span>
+      </button>
+
+      <button class="nav-item" onclick="Router.go('tickets'); document.getElementById('filter-status').value='in-progress'; filterTickets()">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 2a6 6 0 0 1 6 6h-2a4 4 0 0 0-4-4V2z"/><path d="M8 14a6 6 0 0 1-6-6h2a4 4 0 0 0 4 4v2z" opacity="0.4"/></svg>
+        In Progress
+        <span class="nav-badge" id="nav-inprogress">0</span>
+      </button>
+
+      <button class="nav-item" onclick="Router.go('tickets'); document.getElementById('filter-status').value='resolved'; filterTickets()">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M13 3L6 11 3 8l-1.5 1.5 4.5 4.5 8.5-10z"/></svg>
+        Resolved
+        <span class="nav-badge" id="nav-resolved">0</span>
+      </button>
+
+      <div class="nav-section" style="margin-top:6px">Intelligence</div>
+
+      <button id="nav-insights" class="nav-item" onclick="Router.go('insights')">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1l1.8 3.6L14 5.3l-3 2.9.7 4.1L8 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7z"/></svg>
+        AI Insights Hub
+        <div class="nav-dot"></div>
+      </button>
+
+      <button id="nav-customers" class="nav-item" onclick="Router.go('customers')">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3z"/></svg>
+        Customers
+      </button>
+
+      <button id="nav-activity" class="nav-item" onclick="Router.go('activity')">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M1 8h3l2-5 3 10 2-6 1 1h3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        Activity Feed
+      </button>
+
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="avatar avatar-md">SA</div>
+      <div class="user-info">
+        <div class="name">Sarah Ali</div>
+        <div class="role">Support Lead</div>
+      </div>
+      <button id="theme-toggle" onclick="toggleTheme()" title="Toggle dark/light mode"
+        style="margin-left:auto;background:none;border:1px solid var(--border2);border-radius:var(--radius-sm);padding:5px 7px;cursor:pointer;color:var(--text2);font-size:13px;line-height:1;flex-shrink:0">
+        🌙
+      </button>
+    </div>
+  </aside>
+
+  <!-- ════════════════════════════════════════
+       MAIN CONTENT
+       ════════════════════════════════════════ -->
+  <main class="main">
+
+    <!-- Topbar -->
+    <div class="topbar">
+      <div id="page-title" class="page-title">Dashboard</div>
+      <div class="topbar-right">
+        <button class="btn btn-primary btn-sm" onclick="Router.go('new-ticket')">
+          <svg width="11" height="11" viewBox="0 0 11 11" fill="currentColor"><path d="M5.5 0v5.5H0v1.5h5.5V11H7V6.5h4.5V5H7V0H5.5z"/></svg>
+          New Ticket
+        </button>
+        <div class="avatar avatar-md" style="cursor:pointer">SA</div>
+      </div>
+    </div>
+
+    <!-- ── DASHBOARD PAGE ── -->
+    <div class="page active" id="page-dashboard">
+      <!-- Stats Row -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-label">Total Tickets</div>
+          <div class="stat-value" id="stat-total">0</div>
+          <div class="stat-delta">All time</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Open</div>
+          <div class="stat-value text-accent" id="stat-open">0</div>
+          <div class="stat-delta">Needs attention</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">In Progress</div>
+          <div class="stat-value text-amber" id="stat-ip">0</div>
+          <div class="stat-delta">Being handled</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">SLA Breached</div>
+          <div class="stat-value text-red" id="stat-sla">0</div>
+          <div class="stat-delta">Overdue</div>
+        </div>
+      </div>
+      <!-- Hidden binding targets for additional stats -->
+      <span id="stat-critical" style="display:none">0</span>
+      <span id="stat-resolved" style="display:none">0</span>
+      <span id="nav-sla" style="display:none">0</span>
+
+      <div class="two-col-layout">
+        <!-- Left Column -->
+        <div>
+          <!-- Volume Chart -->
+          <div class="card" style="margin-bottom:14px">
+            <div class="card-title">Ticket Volume — Last 7 Days</div>
+            <div style="height:160px;position:relative">
+              <canvas id="chart-volume"></canvas>
+            </div>
+          </div>
+
+          <!-- Recent Tickets Table -->
+          <div class="section-title">Recent Tickets</div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th><th>Title</th><th>Priority</th><th>Status</th><th>SLA</th>
+                </tr>
+              </thead>
+              <tbody id="dash-table">
+                <tr><td colspan="5"><div class="empty-state"><p>Loading…</p></div></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div>
+          <!-- Donut Chart -->
+          <div class="card" style="margin-bottom:14px">
+            <div class="card-title">Status Distribution</div>
+            <canvas id="chart-donut" style="max-height:200px"></canvas>
+          </div>
+
+          <!-- AI Overview -->
+          <div class="ai-panel" style="margin-bottom:14px">
+            <div class="ai-panel-header">
+              <div class="ai-icon"><svg viewBox="0 0 12 12"><path d="M6 1l1.5 3 3.5.5-2.5 2.5.6 3.5L6 9l-3.1 1.5.6-3.5L1 4.5l3.5-.5L6 1z"/></svg></div>
+              <span class="ai-panel-title">AI Queue Summary</span>
+              <span class="ai-panel-sub">Claude Sonnet</span>
+            </div>
+            <div class="ai-panel-body">
+              <div class="ai-response" id="ai-overview-text" style="color:var(--text3);font-style:italic">Analyzing queue…</div>
+              <div id="ai-overview-actions" style="display:none;gap:6px;margin-top:10px">
+                <div class="ai-chip" onclick="Pages.dashboard()">↻ Refresh</div>
+                <div class="ai-chip" onclick="Router.go('insights')">Full Insights →</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- At-Risk Customers -->
+          <div class="card">
+            <div class="card-title">⚠ At-Risk Customers</div>
+            <div id="at-risk-list"><div class="ai-loading"><div class="ai-dot"></div><div class="ai-dot"></div><div class="ai-dot"></div></div></div>
+          </div>
+
+          <!-- Priority Bars -->
+          <div class="card" style="margin-top:14px">
+            <div class="card-title">Priority Breakdown</div>
+            <div id="priority-bars"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ALL TICKETS PAGE ── -->
+    <div class="page" id="page-tickets">
+      <div class="filter-row">
+        <div class="search-box">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6.5" cy="6.5" r="5"/><path d="M11 11l3 3"/></svg>
+          <input type="text" id="filter-search" placeholder="Search tickets, IDs, tags…" oninput="filterTickets()">
+        </div>
+        <select class="filter-select" id="filter-status"   onchange="filterTickets()">
+          <option value="">All Status</option>
+          <option value="open">Open</option>
+          <option value="in-progress">In Progress</option>
+          <option value="resolved">Resolved</option>
+          <option value="closed">Closed</option>
+        </select>
+        <select class="filter-select" id="filter-priority" onchange="filterTickets()">
+          <option value="">All Priority</option>
+          <option value="critical">Critical</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+        <select class="filter-select" id="filter-category" onchange="filterTickets()">
+          <option value="">All Categories</option>
+          <option value="Bug">Bug</option>
+          <option value="Feature Request">Feature Request</option>
+          <option value="Feature Upgrade">Feature Upgrade</option>
+          <option value="Incident">Incident</option>
+          <option value="Query">Query</option>
+        </select>
+        <select class="filter-select" id="filter-source"   onchange="filterTickets()">
+          <option value="">All Sources</option>
+          <option value="Email">Email</option>
+          <option value="Chat">Chat</option>
+          <option value="API">API</option>
+          <option value="Manual">Manual</option>
+        </select>
+        <button class="btn btn-primary btn-sm" onclick="Router.go('new-ticket')">+ New Ticket</button>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title / Tags</th>
+              <th>Category</th>
+              <th>Priority</th>
+              <th>Status</th>
+              <th>Source</th>
+              <th>Assignee</th>
+              <th>SLA / Created</th>
+            </tr>
+          </thead>
+          <tbody id="tickets-table"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ── NEW TICKET PAGE ── -->
+    <div class="page" id="page-new-ticket">
+      <div style="max-width:660px">
+        <div class="card">
+          <div style="margin-bottom:18px">
+            <div style="font-size:15px;font-weight:600;margin-bottom:3px">Create New Ticket</div>
+            <div style="font-size:13px;color:var(--text3)">Fill in details. Use AI Analyze to auto-suggest priority, category & tags.</div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Title *</label>
+            <input class="form-input" id="new-title" type="text" placeholder="Brief summary of the issue…">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Description *</label>
+            <textarea class="form-textarea" id="new-desc" style="min-height:110px" placeholder="Describe the issue in detail. Include steps, expected vs actual behavior, environment…"></textarea>
+          </div>
+
+          <!-- AI Suggest Panel -->
+          <div class="ai-panel" style="margin-bottom:18px">
+            <div class="ai-panel-header">
+              <div class="ai-icon"><svg viewBox="0 0 12 12"><path d="M6 1l1.5 3 3.5.5-2.5 2.5.6 3.5L6 9l-3.1 1.5.6-3.5L1 4.5l3.5-.5L6 1z"/></svg></div>
+              <span class="ai-panel-title">AI Auto-Classify</span>
+              <button class="ai-chip" style="margin-left:auto" onclick="suggestPriority()">Analyze →</button>
+            </div>
+            <div class="ai-panel-body">
+              <div id="ai-suggest-text" style="font-size:13px;color:var(--text3);font-style:italic;display:none"></div>
+              <div id="ai-suggest-placeholder" style="font-size:13px;color:var(--text3);font-style:italic">Click Analyze after writing a description to auto-suggest priority, category & tags.</div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Priority</label>
+              <select class="form-select" id="new-priority">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+                <option value="critical">Critical</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Category</label>
+              <select class="form-select" id="new-category">
+                <option value="Bug">Bug</option>
+                <option value="Feature Request">Feature Request</option>
+                <option value="Feature Upgrade">Feature Upgrade</option>
+                <option value="Incident">Incident</option>
+                <option value="Query" selected>Query</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">SLA / Due Date</label>
+              <input class="form-input" id="new-due-date" type="date">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Assignee</label>
+              <select class="form-select" id="new-assignee">
+                <option value="Sarah Ali">Sarah Ali</option>
+                <option value="Dev Kumar">Dev Kumar</option>
+                <option value="Riya Patel">Riya Patel</option>
+                <option value="James Park">James Park</option>
+                <option value="Unassigned">Unassigned</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Customer Account</label>
+              <select class="form-select" id="new-customer">
+                <option value="">— None —</option>
+                <option value="CUST-001">GlobalFoods HQ</option>
+                <option value="CUST-002">FreshMart Retail Group</option>
+                <option value="CUST-003">Logix Pharma Supply</option>
+                <option value="CUST-004">QuickShip Warehousing</option>
+                <option value="CUST-005">AgriSource Suppliers</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Tags</label>
+            <div class="tags-input-wrap" id="new-tags-wrap" onclick="this.querySelector('input')?.focus()"></div>
+            <div style="font-size:11px;color:var(--text3);margin-top:4px">Press Enter or comma to add a tag</div>
+          </div>
+
+          <div style="display:flex;gap:10px">
+            <button class="btn btn-primary" onclick="createTicket()">Create Ticket</button>
+            <button class="btn btn-ghost" onclick="Router.go('tickets')">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── TICKET DETAIL PAGE ── -->
+    <div class="page" id="page-detail">
+      <div class="detail-layout" id="detail-content"></div>
+    </div>
+
+    <!-- ── CUSTOMERS PAGE ── -->
+    <div class="page" id="page-customers">
+      <div style="max-width:900px">
+        <div id="customers-list" style="display:flex;flex-direction:column;gap:12px">
+          <div class="empty-state"><p>Loading customers…</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CUSTOMER DETAIL PAGE ── -->
+    <div class="page" id="page-customer">
+      <div class="detail-layout" id="customer-detail-content"></div>
+    </div>
+
+    <!-- ── AI INSIGHTS HUB PAGE ── -->
+    <div class="page" id="page-insights">
+      <!-- Content rendered dynamically by insights.js — renderInsightsShell() -->
+    </div>
+
+    <!-- ── ACTIVITY PAGE ── -->
+    <div class="page" id="page-activity">
+      <div style="max-width:680px">
+        <div class="card">
+          <div class="card-title">Recent Activity</div>
+          <div id="activity-list"></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- ════════════════════════════════════════
+     EDIT TICKET MODAL
+     ════════════════════════════════════════ -->
+<div class="modal-overlay" id="edit-modal">
+  <div class="modal" style="width:540px">
+    <div class="modal-header">
+      <span class="modal-title">Edit Ticket</span>
+      <button class="close-btn" onclick="UI.closeModal('edit-modal')">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M12 4L8 8l4 4-1.5 1.5L8 9.5l-4 4L2.5 12 6.5 8l-4-4L4 2.5l4 4 4-4z"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <input type="hidden" id="edit-ticket-id">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Status</label>
+          <select class="form-select" id="edit-status">
+            <option value="open">Open</option>
+            <option value="in-progress">In Progress</option>
+            <option value="resolved">Resolved</option>
+            <option value="closed">Closed</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Priority</label>
+          <select class="form-select" id="edit-priority">
+            <option value="critical">Critical</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Assignee</label>
+          <select class="form-select" id="edit-assignee">
+            <option value="Sarah Ali">Sarah Ali</option>
+            <option value="Dev Kumar">Dev Kumar</option>
+            <option value="Riya Patel">Riya Patel</option>
+            <option value="James Park">James Park</option>
+            <option value="Unassigned">Unassigned</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">SLA / Due Date</label>
+          <input class="form-input" id="edit-due-date" type="date">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Tags</label>
+        <div class="tags-input-wrap" id="edit-tags-wrap" onclick="this.querySelector('input')?.focus()"></div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-ghost btn-sm" onclick="UI.closeModal('edit-modal')">Cancel</button>
+      <button class="btn btn-primary btn-sm" onclick="saveEdit()">Save Changes</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast Container -->
+<div class="toast-container" id="toasts"></div>
+
+<!-- ════════════════════════════════════════
+     JAVASCRIPT — load order matters
+     data → api → ui → router → pages → init
+     ════════════════════════════════════════ -->
+<script src="js/data.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/config.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/router.js"></script>
+<script src="js/pages/dashboard.js"></script>
+<script src="js/pages/tickets.js"></script>
+<script src="js/pages/detail.js"></script>
+<script src="js/pages/newticket.js"></script>
+<script src="js/pages/customers.js"></script>
+<script src="js/pages/insights.js"></script>
+<script src="js/pages/activity.js"></script>
+
+<script>
+  // ── Dark/Light Mode ──
+  (function() {
+    const saved = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', saved);
+    updateThemeBtn(saved);
+  })();
+
+  function updateThemeBtn(theme) {
+    const btn = document.getElementById('theme-toggle');
+    if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+  }
+
+  window.toggleTheme = function() {
+    const current = document.documentElement.getAttribute('data-theme') || 'dark';
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateThemeBtn(next);
+  };
+
+  // ── Bootstrap ──
+  window.addEventListener('load', () => {
+    renderNewTagChips();
+    UI.updateStats();
+    Router.resolve();
+  });
+</script>
+
+</body>
+</html>

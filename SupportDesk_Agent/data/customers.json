@@ -1,0 +1,57 @@
+[
+  {
+    "id": "CUST-001",
+    "name": "GlobalFoods HQ",
+    "arr": 1200000,
+    "health": 40,
+    "industry": "Food Distribution",
+    "plan": "Enterprise",
+    "csm": "Sarah Ali",
+    "contact": "Marcus Webb",
+    "since": "2022-04-10"
+  },
+  {
+    "id": "CUST-002",
+    "name": "FreshMart Retail Group",
+    "arr": 1500000,
+    "health": 35,
+    "industry": "Retail Chain",
+    "plan": "Enterprise",
+    "csm": "James Park",
+    "contact": "Priya Nair",
+    "since": "2021-09-01"
+  },
+  {
+    "id": "CUST-003",
+    "name": "Logix Pharma Supply",
+    "arr": 700000,
+    "health": 55,
+    "industry": "Pharma Logistics",
+    "plan": "Enterprise",
+    "csm": "Riya Patel",
+    "contact": "Dr. Okafor",
+    "since": "2023-01-15"
+  },
+  {
+    "id": "CUST-004",
+    "name": "QuickShip Warehousing",
+    "arr": 500000,
+    "health": 72,
+    "industry": "3PL Logistics",
+    "plan": "Business",
+    "csm": "Dev Kumar",
+    "contact": "Laura Chen",
+    "since": "2023-06-20"
+  },
+  {
+    "id": "CUST-005",
+    "name": "AgriSource Suppliers",
+    "arr": 900000,
+    "health": 68,
+    "industry": "Supplier Network",
+    "plan": "Enterprise",
+    "csm": "Sarah Ali",
+    "contact": "Ravi Menon",
+    "since": "2022-11-03"
+  }
+]

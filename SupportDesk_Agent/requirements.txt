@@ -1,0 +1,18 @@
+# SupportDesk AI Agent — requirements.txt
+# Python 3.11+
+# Install: pip install -r requirements.txt
+
+# ── LLM & Orchestration ───────────────────────────────────────────
+openai>=1.0.0
+langchain>=0.2.0
+langchain-openai>=0.1.0
+langchain-core>=0.2.0
+
+# ── Vector Store ──────────────────────────────────────────────────
+chromadb>=0.4.0
+
+# ── Environment ───────────────────────────────────────────────────
+python-dotenv>=1.0.0
+
+# ── Data & Utilities ──────────────────────────────────────────────
+pydantic>=2.0.0

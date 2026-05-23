@@ -1,0 +1,223 @@
+{
+  "generated_at": "2026-05-06T00:16:34.878894",
+  "total_interactions": 142,
+  "phases": {
+    "phase2_baseline": {
+      "label": "Phase 2 \u2014 Baseline",
+      "interaction_count": 6,
+      "grounding_rate": "83.3%",
+      "avg_latency_ms": 1.5,
+      "tool_accuracy": {},
+      "latency_stats": {},
+      "consistency": {
+        "Q3_consistent": true,
+        "Q5_consistent": true,
+        "Q3_runs": 1,
+        "Q5_runs": 1
+      }
+    },
+    "phase3_llm": {
+      "label": "Phase 3 \u2014 LLM",
+      "interaction_count": 43,
+      "grounding_rate": "100.0%",
+      "avg_latency_ms": 10612.7,
+      "tool_accuracy": {},
+      "latency_stats": {},
+      "consistency": {
+        "Q3_consistent": true,
+        "Q5_consistent": true,
+        "Q3_runs": 9,
+        "Q5_runs": 10
+      }
+    },
+    "phase4_rag": {
+      "label": "Phase 4 \u2014 RAG",
+      "interaction_count": 25,
+      "grounding_rate": "84.0%",
+      "avg_latency_ms": 6975.0,
+      "tool_accuracy": {},
+      "latency_stats": {},
+      "consistency": {
+        "Q3_consistent": true,
+        "Q5_consistent": true,
+        "Q3_runs": 4,
+        "Q5_runs": 5
+      }
+    },
+    "phase5_langchain": {
+      "label": "Phase 5 \u2014 LangChain",
+      "interaction_count": 20,
+      "grounding_rate": "100.0%",
+      "avg_latency_ms": 9848.9,
+      "tool_accuracy": {
+        "accuracy": 92.3,
+        "correct": 12,
+        "total": 13,
+        "details": {
+          "Q3": {
+            "expected": "rank_customer_risk",
+            "actual": "rank_customer_risk",
+            "correct": true
+          },
+          "Q5": {
+            "expected": "cross_ticket_analysis",
+            "actual": "cross_ticket_analysis",
+            "correct": true
+          },
+          "Q1": {
+            "expected": "cross_ticket_analysis",
+            "actual": "cross_ticket_analysis",
+            "correct": true
+          },
+          "Q2": {
+            "expected": "detect_patterns",
+            "actual": "detect_patterns",
+            "correct": true
+          },
+          "Q4": {
+            "expected": "predict_sla_risk",
+            "actual": "predict_sla_risk",
+            "correct": true
+          }
+        }
+      },
+      "latency_stats": {},
+      "consistency": {
+        "Q3_consistent": true,
+        "Q5_consistent": true,
+        "Q3_runs": 4,
+        "Q5_runs": 3
+      }
+    },
+    "phase6_memory": {
+      "label": "Phase 6 \u2014 Memory",
+      "interaction_count": 26,
+      "grounding_rate": "100.0%",
+      "avg_latency_ms": 11565.6,
+      "tool_accuracy": {
+        "accuracy": 100.0,
+        "correct": 18,
+        "total": 18,
+        "details": {
+          "Q3": {
+            "expected": "rank_customer_risk",
+            "actual": "rank_customer_risk",
+            "correct": true
+          },
+          "Q5": {
+            "expected": "cross_ticket_analysis",
+            "actual": "cross_ticket_analysis",
+            "correct": true
+          },
+          "Q1": {
+            "expected": "cross_ticket_analysis",
+            "actual": "cross_ticket_analysis",
+            "correct": true
+          },
+          "Q2": {
+            "expected": "detect_patterns",
+            "actual": "detect_patterns",
+            "correct": true
+          },
+          "Q4": {
+            "expected": "predict_sla_risk",
+            "actual": "predict_sla_risk",
+            "correct": true
+          }
+        }
+      },
+      "latency_stats": {},
+      "consistency": {
+        "Q3_consistent": true,
+        "Q5_consistent": true,
+        "Q3_runs": 5,
+        "Q5_runs": 5
+      }
+    },
+    "phase7_adaptive": {
+      "label": "Phase 7 \u2014 Adaptive",
+      "interaction_count": 22,
+      "grounding_rate": "100.0%",
+      "avg_latency_ms": 13916.7,
+      "tool_accuracy": {
+        "accuracy": 100.0,
+        "correct": 22,
+        "total": 22,
+        "details": {
+          "Q2": {
+            "expected": "detect_patterns",
+            "actual": "detect_patterns, cross_ticket_analysis",
+            "correct": true
+          },
+          "Q1": {
+            "expected": "cross_ticket_analysis",
+            "actual": "cross_ticket_analysis",
+            "correct": true
+          },
+          "Q3": {
+            "expected": "rank_customer_risk",
+            "actual": "rank_customer_risk",
+            "correct": true
+          },
+          "Q4": {
+            "expected": "predict_sla_risk",
+            "actual": "predict_sla_risk",
+            "correct": true
+          },
+          "Q5": {
+            "expected": "cross_ticket_analysis",
+            "actual": "cross_ticket_analysis",
+            "correct": true
+          }
+        }
+      },
+      "latency_stats": {
+        "rank_customer_risk": {
+          "count": 2,
+          "avg": 7838.8,
+          "p50": 10742.85,
+          "p95": 10742.85,
+          "min": 4934.77,
+          "max": 10742.85
+        },
+        "cross_ticket_analysis": {
+          "count": 2,
+          "avg": 15353.1,
+          "p50": 18464.09,
+          "p95": 18464.09,
+          "min": 12242.1,
+          "max": 18464.09
+        },
+        "detect_patterns, cross_ticket_analysis": {
+          "count": 1,
+          "avg": 19434.6,
+          "p50": 19434.62,
+          "p95": 19434.62,
+          "min": 19434.62,
+          "max": 19434.62
+        },
+        "predict_sla_risk": {
+          "count": 1,
+          "avg": 7569.7,
+          "p50": 7569.66,
+          "p95": 7569.66,
+          "min": 7569.66,
+          "max": 7569.66
+        }
+      },
+      "consistency": {
+        "Q3_consistent": true,
+        "Q5_consistent": true,
+        "Q3_runs": 3,
+        "Q5_runs": 3
+      }
+    }
+  },
+  "overall": {
+    "grounding_rate": "96.5%",
+    "avg_latency_ms": 10815.1,
+    "error_count": 5,
+    "safety_blocks": 0,
+    "total_phases_run": 6
+  }
+}
